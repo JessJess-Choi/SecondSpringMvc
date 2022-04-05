@@ -21,6 +21,11 @@ public class ServletExController {
         res.sendError(404,"404 error");
     }
 
+    @GetMapping("/error-400")
+    public void error400(HttpServletResponse res) throws IOException {
+        res.sendError(400,"400 error");
+    }
+
     @GetMapping("/error-500")
     public void error501(HttpServletResponse res) throws IOException{
         res.sendError(500,"500 error");
